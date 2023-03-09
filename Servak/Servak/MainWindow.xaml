@@ -1,0 +1,25 @@
+﻿<Window x:Class="Servak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Servak"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid Background="Gray" Name="Grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"></ColumnDefinition>
+            <ColumnDefinition Width="4*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Name="LogTextBlock" Margin="1" Background="Aqua" Width="200" Height="400"></TextBlock>
+        <WrapPanel Name="colorWrapPanel" Grid.Column="1" Margin="1" Background="yellow" >
+            <Button Name="colorButton" Content="Button" Width="100"  Height="35" Margin="10" Click="colorButton_Click"></Button>
+            <Label Name="ColorLabel" Margin="10">Label</Label>
+            <CheckBox Name="ColorCheckBox" Margin="10"> CheckBox</CheckBox>
+            <RadioButton Name="RadioBtn" Margin="10"> RadioButton</RadioButton>
+            <TextBlock x:Name="colorTextBlock" Margin="10" Background="White"> TextBlock</TextBlock>
+            <Slider Name="colorSlider" Margin="10" Width="50"></Slider>
+        </WrapPanel>
+
+    </Grid>
+</Window>
